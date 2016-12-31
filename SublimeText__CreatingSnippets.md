@@ -1,7 +1,7 @@
 Sublime Text: Create Snippets
 =============================
 
-## Snippet Scopes (Sublime Text 2)
+## Snippet Scopes
 
 [Sublime Text 2](https://gist.github.com/iambibhas/4705378)
 
