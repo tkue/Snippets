@@ -8,11 +8,19 @@
 	"buffers":
 	[
 		{
-			"file": "py__selenium.md",
+			"file": "/home/tom/bin/notes/School-Courses.md",
 			"settings":
 			{
-				"buffer_size": 10285,
+				"buffer_size": 419,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "linux/vps__OpenVPN.md",
+			"settings":
+			{
+				"buffer_size": 595,
 				"line_ending": "Unix"
 			}
 		}
@@ -24,10 +32,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 125.0,
-		"last_filter": "syntax ark",
+		"height": 191.0,
+		"last_filter": "key",
 		"selected_items":
 		[
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
 			[
 				"syntax ark",
 				"Set Syntax: Markdown Extended"
@@ -37,15 +61,11 @@
 				"Set Syntax: MultiMarkdown"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 417.0
+		"width": 399.0
 	},
 	"console":
 	{
@@ -66,14 +86,21 @@
 	},
 	"expanded_folders":
 	[
-		"/home/tom/bin/gists"
+		"/home/tom/bin/bash",
+		"/home/tom/bin/gists",
+		"/home/tom/bin/gists/Installs",
+		"/home/tom/bin/gists/linux",
+		"/home/tom/bin/notes"
 	],
 	"file_history":
 	[
+		"/home/tom/bin/auto_commit.sh",
+		"/home/tom/bin/gists/py__selenium.md",
+		"/home/tom/.profile"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -87,13 +114,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bash",
+			"master",
+			"bash",
+			"^.*:\\d+"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -104,33 +136,60 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "py__selenium.md",
+					"file": "/home/tom/bin/notes/School-Courses.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10285,
+						"buffer_size": 419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								594
+								76,
+								76
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"open_with_edit": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
-						"translation.x": 39.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "linux/vps__OpenVPN.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 130.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -142,11 +201,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -179,7 +238,7 @@
 	"project": "gists.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -216,8 +275,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 150.0,
+	"side_bar_visible": true,
+	"side_bar_width": 101.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

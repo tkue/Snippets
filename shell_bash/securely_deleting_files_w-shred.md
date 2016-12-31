@@ -1,15 +1,15 @@
 Securely Deleting Files Using shred
 ===================================
 
-1. find + shred to recursively delete 
+1. find + shred to recursively delete
 
-```bash
+```shell
 find <directory> -depth -type f -exec shred -v -n 1 -z -u {} \;
 ```
 
 2. Should run on each file:
 
-```bash 
+```shell
 shred -v -n $1 "/path/to/your/file"         # voverwriting with random data
 sync;                                       # forcing a sync of the buffers to the disk
                                             #   (fsync should be run by shred, though)

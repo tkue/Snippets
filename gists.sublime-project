@@ -2,7 +2,19 @@
 	"folders":
 	[
 		{
+			"path": "/home/tom/bin/bash"
+		},
+		{
 			"path": "."
+		},
+		{
+			"path": "/home/tom/bin/notes"
+		},
+		{
+			"path": "/home/tom/bin/sql"
+		},
+		{
+			"path": "/home/tom/bin/workspace"
 		}
 	]
 }
