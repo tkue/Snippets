@@ -47,8 +47,8 @@ Useful Things
 - [Python Module of the Week](https://pymotw.com/3/)
     - Link for Python 3, but also has articles for Python 2
 
-    ```
-        Text
+
+    #### Text
 
         string — Text Constants and Templates
         textwrap — Formatting Text Paragraphs
@@ -65,7 +65,9 @@ Useful Things
         weakref — Impermanent References to Objects
         copy — Duplicate Objects
         pprint — Pretty-print Data Structures
-        Algorithms
+
+    ####  Algorithms
+
         functools — Tools for Manipulating Functions
         itertools — Iterator Functions
         operator — Functional Interface to Built-in Operators
