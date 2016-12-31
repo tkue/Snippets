@@ -48,7 +48,7 @@ Useful Things
     - Link for Python 3, but also has articles for Python 2
 
 
-    #### Text
+#### Text
 
         string — Text Constants and Templates
         textwrap — Formatting Text Paragraphs
@@ -66,14 +66,14 @@ Useful Things
         copy — Duplicate Objects
         pprint — Pretty-print Data Structures
 
-    ####  Algorithms
+####  Algorithms
 
         functools — Tools for Manipulating Functions
         itertools — Iterator Functions
         operator — Functional Interface to Built-in Operators
         contextlib — Context Manager Utilities
 
-        Dates and Times
+#### Dates and Times
 
         time — Clock Time
         datetime — Date and Time Value Manipulation
@@ -85,7 +85,7 @@ Useful Things
         math — Mathematical Functions
         statistics — Statistical Calculations
 
-        The File System
+#### The File System
 
         os.path — Platform-independent Manipulation of Filenames
         pathlib — Filesystem Paths as Objects
@@ -99,7 +99,7 @@ Useful Things
         codecs — String Encoding and Decoding
         io — Text, Binary, and Raw Stream I/O Tools
 
-        Data Persistence and Exchange
+#### Data Persistence and Exchange
 
         pickle — Object Serialization
         shelve — Persistent Storage of Objects
@@ -108,14 +108,16 @@ Useful Things
         xml.etree.ElementTree — XML Manipulation API
         csv — Comma-separated Value Files
 
-        Data Compression and Archiving
+#### Data Compression and Archiving
 
         zlib — GNU zlib Compression
         gzip — Read and Write GNU zip Files
         bz2 — bzip2 Compression
         tarfile — Tar Archive Access
         zipfile — ZIP Archive Access
-        Cryptography
+
+#### Cryptography
+
         hashlib — Cryptographic Hashing
         hmac — Cryptographic Message Signing and Verification
         Concurrency with Processes, Threads, and Coroutines
@@ -126,7 +128,7 @@ Useful Things
         asyncio — Asynchronous I/O, event loop, and concurrency tools
         concurrent.futures — Manage Pools of Concurrent Tasks
 
-        Networking
+#### Networking
 
         ipaddress — Internet Addresses
         socket — Network Communication
@@ -134,7 +136,7 @@ Useful Things
         select — Wait for I/O Efficiently
         socketserver — Creating Network Servers
 
-        The Internet
+#### The Internet
 
         urllib.parse — Split URLs into Components
         urllib.request — Network Resource Access
@@ -148,7 +150,7 @@ Useful Things
         xmlrpc.client — Client Library for XML-RPC
         xmlrpc.server — An XML-RPC server
 
-        Email
+#### Email
 
         smtplib — Simple Mail Transfer Protocol Client
         smtpd — Sample Mail Servers
@@ -169,7 +171,9 @@ Useful Things
         Internationalization and Localization
         gettext — Message Catalogs
         locale — Cultural Localization API
-        Developer Tools
+
+#### Developer Tools
+
         pydoc — Online Help for Modules
         doctest — Testing Through Documentation
         unittest — Automated Testing Framework
@@ -185,7 +189,7 @@ Useful Things
         venv — Create Virtual Environments
         ensurepip — Install the Python Package Installer
 
-        Runtime Features
+#### Runtime Features
 
         site — Site-wide Configuration
         sys — System-specific Configuration
@@ -195,7 +199,7 @@ Useful Things
         gc — Garbage Collector
         sysconfig — Interpreter Compile-time Configuration
 
-        Language Tools
+#### Language Tools
 
         warnings — Non-fatal Alerts
         abc — Abstract Base Classes
@@ -209,7 +213,7 @@ Useful Things
         pwd — UNIX Password Database
         grp — UNIX Group Database
 
-        Porting Notes
+#### Porting Notes
 
         References
         New Modules
