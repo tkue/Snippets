@@ -4,7 +4,7 @@ Securely Deleting Files Using shred
 1. find + shred to recursively delete
 
 ```shell
-find <directory> -depth -type f -exec shred -v -n 1 -z -u {} \;
+find <directory> -depth -type f -exec shred -v -n 10 -z -u {} \;
 ```
 
 2. Should run on each file:
