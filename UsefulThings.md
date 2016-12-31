@@ -14,7 +14,7 @@ Useful Things
 
 ## Business Intelligence
 
-- [ Power BI for Data Modeling](https://www.simple-talk.com/sql/bi/power-bi-data-modelling/)
+- [Power BI for Data Modeling](https://www.simple-talk.com/sql/bi/power-bi-data-modelling/)
 
 
 ## SQL Server / T-SQL
