@@ -1,6 +1,16 @@
 Useful Things
 ========
 
+<!-- MarkdownTOC -->
+
+- Business Intelligence
+- SQL Server / T-SQL
+- C
+- Python
+
+<!-- /MarkdownTOC -->
+
+
 
 ## Business Intelligence
 
