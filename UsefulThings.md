@@ -54,7 +54,9 @@ Useful Things
         textwrap — Formatting Text Paragraphs
         re — Regular Expressions
         difflib — Compare Sequences
-        Data Structures
+
+#### Data Structures
+
         enum – Enumeration Type
         collections — Container Data Types
         array — Sequence of Fixed-type Data
