@@ -18,4 +18,4 @@ shred -v -n 0 -z -u "/path/to/your/file";   # overwriting with zeroes and remove
 
 
 ----
-__Source:    __[StackExchange](https://unix.stackexchange.com/questions/27027/how-do-i-recursively-shred-an-entire-directory-tree)
+__Source:__[StackExchange](https://unix.stackexchange.com/questions/27027/how-do-i-recursively-shred-an-entire-directory-tree)
