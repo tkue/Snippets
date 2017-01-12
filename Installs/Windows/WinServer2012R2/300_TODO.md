@@ -1,6 +1,0 @@
-TODO 
-=====
-
-## SQL Server 
-
-- Download 
