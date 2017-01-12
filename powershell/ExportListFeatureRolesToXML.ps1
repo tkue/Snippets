@@ -1,1 +1,0 @@
-Get-WindowsFeature | ? { $_.Installed -AND $_.SubFeatures.Count -eq 0 } | Export-Clixml .\RnF.xml
