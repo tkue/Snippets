@@ -1,0 +1,88 @@
+background yes
+update_interval 2.0
+total_run_times 0
+use_xft yes
+# next two lines added to make Conky transparent; needed for Ubuntu
+#own_window_type override
+#own_window_argb_visual yes 
+own_window_argb_value 0
+own_window yes
+own_window_transparent yes
+#own_window_type normal
+own_window_type override
+own_window_hints undecorated,below,skip_pager,skip_taskbar
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+alignment top_right
+gap_x 15
+gap_y 30
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+TEXT
+${font sans-serif:bold:size=8}${color FFCC00}SYSTEM $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}Host: $alignr $nodename
+###$sysname $alignr $machine
+Kernel: $alignr $kernel
+Uptime: $alignr $uptime
+Procs: $alignr $processes
+Running: $alignr $running_processes
+Load Avg: $alignr $loadavg
+${font sans-serif:bold:size=8}${color FFCC00}BATTERY (${battery}) $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}${battery_percent}%	${battery_bar}
+Time to Charge: ${alignr}${apcupsd_timeleft}
+Time Left: ${alignr}${battery_time}
+${font sans-serif:bold:size=8}${color FFCC00}PROCESSORS $stippled_hr
+${font sans-serif:bold:size=8}${color FFFFCC}Total ${font}${color}${font sans-serif:normal:size=8}${color FFFFCC}                   ${execi 2 sensors | grep 'Core 0' | awk '{print $3}' | cut -c2-3} C   $freq_g GHz
+   CPU0: ${font sans-serif:normal:size=8}${color FFFFCC} ${cpu cpu0} % ${cpubar cpu0}
+${font sans-serif:bold:size=8}${color FFFFCC}Core 1 ${font}${color}${font sans-serif:normal:size=8}${color FFFFCC}                ${execi 2 sensors | grep 'Core 1' | awk '{print $3}' | cut -c2-3} C    ${freq_g 1} GHz
+   CPU1: ${cpu cpu1} % ${cpubar cpu1}
+   CPU2: ${cpu cpu2} % ${cpubar cpu2}
+${font sans-serif:bold:size=8}${color FFFFCC}Core 2 ${font}${color}${font sans-serif:normal:size=8}${color FFFFCC}                ${execi 2 sensors | grep 'Core 1' | awk '{print $3}' | cut -c2-3} C    ${freq_g 3} GHz
+   CPU3: ${cpu cpu3} % ${cpubar cpu3}
+   CPU4: ${cpu cpu4} % ${cpubar cpu4}
+${cpugraph}
+${font sans-serif:bold:size=8}${color FFCC00}TOP PROCS (CPU) $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}${top name 1} $alignr ${top cpu 1} %
+${top name 2} $alignr ${top cpu 2} %
+${top name 3} $alignr ${top cpu 3} %
+${top name 4} $alignr ${top cpu 4} %
+${top name 5} $alignr ${top cpu 5} %
+${font sans-serif:bold:size=8}${color FFCC00}TOP PROCS (MEM) $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}${top_mem name 1} $alignr ${top_mem mem 1} %
+${top_mem name 2} $alignr ${top_mem mem 2} %
+${top_mem name 3} $alignr ${top_mem mem 3} %
+${top_mem name 4} $alignr ${top_mem mem 4} %
+${top_mem name 5} $alignr ${top_mem mem 5} %
+${font sans-serif:bold:size=8}${color FFCC00}MEMORY $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}RAM  $alignc $mem / $memmax $alignr $memperc %
+${font sans-serif:normal:size=8}${color FFFFCC}SWAP $alignc $swap / $swapmax $alignr $swapperc %
+${font sans-serif:bold:size=8}${color FFCC00}DISK SPACE USED $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /} %
+${font sans-serif:bold:size=8}${color FFCC00}DISK I/O $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}Read: ${diskio_read} ${alignr}Write: ${diskio_write}
+${combine ${diskiograph_read}  ${diskiograph_write}}
+#${font sans-serif:normal:size=8}${color FFFFCC}Read: $diskio_read ${alignr}Write: ${diskio_write}
+#${diskiograph_read}${alignr}${diskiograph_write}
+#${font sans-serif:normal:size=8}${color FFFFCC}Read: $alignr $diskio_read
+#${diskiograph_read}
+#${font sans-serif:normal:size=8}${color FFFFCC}Write: $alignr $diskio_write
+#${diskiograph_write}
+${font sans-serif:bold:size=8}${color FFCC00}WIRELESS $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}SSID: ${alignr}${wireless_essid wlan0}
+Frequency: ${alignr}${exec iwconfig | grep 'Frequency' | cut -c35-43}
+Wireless Signal: ${alignr}${wireless_link_qual_perc wlan0}%
+Bitrate: ${alignr}${wireless_bitrate wlan0}
+IP Address: ${alignr}${addr wlan0}
+Down: ${downspeed wlan0}${alignr}Up: ${upspeed wlan0}
+${downspeedgraph wlan0}
+#
+# DISPLAY SECURITY UPDATES #
+#
+${font sans-serif:bold:size=8}${color FFCC00}SECURITY UPDATES $stippled_hr
+${font sans-serif:normal:size=8}${color FFFFCC}Number of Packages:     ${execi 90000 debsecan --suite jessie --only-fixed | wc -l}
+${font sans-serif:normal:size=8}${color FFFFCC}Total Vulnerabilities:    ${execi 90000 debsecan --suite jessie | wc -l}

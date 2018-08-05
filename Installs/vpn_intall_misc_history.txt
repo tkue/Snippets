@@ -1,0 +1,108 @@
+    1  apt-get update; apt-get dist-upgrade; apt-get install needrestart
+    2  needrestart
+    3  clear
+    4  apt-get install gunzip openvpn easy-rsa
+    5  apt-get install unp openvpn easy-rsa
+    6  clear
+    7  apt-cache search zip
+    8  apt-cache search zip | sort | grep ^g
+    9  apt-get install gzip
+   10  gunzip
+   11  gunzip -c /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz > /etc/openvpn/server.conf
+   12  nano etc/openvpn/server.conf
+   13  apt-get install nano
+   14  nano etc/openvpn/server.conf
+   15  nano /etc/openvpn/server.conf
+   16  nano /etc/sysctl.conf
+   17  echo 1 > /proc/sys/net/ipv4/ip_forward
+   18  apt-get install ufw'
+   19  apt-get install ufw
+   20  nano /etc/default/ufw
+   21  nano /etc/ufw/before.rules
+   22  ufw enable
+   23  ufw status
+   24  cp -r /usr/share/easy-rsa/ /etc/openvpn
+   25  mkdir /etc/openvpn/easy-rsa/keys
+   26  nano /etc/openvpn/easy-rsa/vars
+   27  nano /etc/openvpn/easy-rsa/vars
+   28  export KEY_NAME="server" && openssl dhparam -out /etc/openvpn/dh2048.pem 2048
+   29  cp /etc/openvpn/easy-rsa/keys/{server.crt,server.key,ca.crt} /etc/openvpn
+   30  . ./vars
+   31  cd /etc/openvpn/easy-rsa
+   32  . ./vars
+   33  ./clean-all
+   34  ./build-ca
+   35  ./build-key-server server
+   36  cp /etc/openvpn/easy-rsa/keys/{server.crt,server.key,ca.crt} /etc/openvpn
+   37  service openvpn start
+   38  service openvpn status
+   39  ./build-key local
+   40  ls
+   41  cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/easy-rsa/keys/client.ovpn
+   42  ./build-key cw
+   43  cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/easy-rsa/keys/client.ovpn
+   44  cp /usr/share/doc/openvpn/examples/sample-config-files/cw.conf /etc/openvpn/easy-rsa/keys/cw.ovpn
+   45  cp /usr/share/doc/openvpn/examples/sample-config-files/local.conf /etc/openvpn/easy-rsa/keys/local.ovpn
+   46  ./build-key cw
+   47  ./build-key acr
+   48  cp /usr/share/doc/openvpn/examples/sample-config-files/acr.conf /etc/openvpn/easy-rsa/keys/acr.ovpn
+   49  ./build-key acr
+   50  ./build-key client1
+   51  cp /usr/share/doc/openvpn/examples/sample-config-files/client1.conf /etc/openvpn/easy-rsa/keys/client1.ovpn
+   52  apt-get update; apt-get upgrade;
+   53  apt-get dist-upgrade
+   54  clear
+   55  hostory
+   56  history
+   57  cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+   58  ~/.dropbox-dist/dropboxd
+   59  cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+   60  ls
+   61  ls -al
+   62  cd .dropbox-dist/
+   63  ls
+   64  ./dropbox &
+   65  ls
+   66  nano dropbox
+   67  ls
+   68  cd
+   69  ls -al
+   70  locate dropbox
+   71  apt-get install locate
+   72  loccate dropbox
+   73  locate dropbox
+   74  dbox
+   75  apropos dropbox
+   76  history > history_openvpn.txt
+   77  cat history_openvpn.txt
+   78  apt-get update; apt-get upgrade
+   79  apt-get install unattended-upgrades
+   80  unattended-upgrades
+   81  apt-get dist-upgrade
+   82  reboot
+   83  unattended-upgrade
+   84  history
+   85  apt-get update; apt-get upgrade
+   86  apt-get dist-upgrade
+   87  apt-get install needrestart
+   88  needrestart
+   89  reboot
+   90  service --status-al
+   91  service --status-all
+   92  apt-get install axel aria2
+   93  df -h
+   94  ls
+   95  cd /
+   96  ls
+   97  mkdir data
+   98  chmod 755 data
+   99  cd data/
+  100  ls
+  101  aria2c http://mirror.nexcess.net/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso http://mirror.us.leaseweb.net/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso http://mirror.usertrust.info/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso https://mirrors.xmission.com/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso https://mirrors.ocf.berkeley.edu/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso http://mirrors.advancedhosters.com/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso http://mirror.math.princeton.edu/pub/debian-cd/current/amd64/iso-dvd/debian-8.5.0-amd64-DVD-1.iso
+  102  apt-get update && apt-get upgrade
+  103  needrestart
+  104  apt-cache search apt | sort
+  105  apt-get install apt-utils apticron
+  106  apt-cache search security | grep audit
+  107  history
+  108  history > vpn_intall_misc_history.txt
