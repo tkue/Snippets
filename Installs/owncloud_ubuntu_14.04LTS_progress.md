@@ -23,7 +23,7 @@
    23  service apache2 status
    24  service mysql status
    25  a2enmod rewrite
-   26  CREATE USER owncloud@localhost IDENTIFIED BY '91d428AA!12';
+   26  CREATE USER owncloud@localhost IDENTIFIED BY '';
    27  mysql -u root -p
    28  mysql -u root -p
    29  mysql -u root -p

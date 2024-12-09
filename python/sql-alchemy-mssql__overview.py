@@ -7,7 +7,7 @@ from sqlalchemy import Table, Integer, Sequence, Column
 __DB = {
     'host': '13.92.40.146',
     'user': 'sa',
-    'pw': 'dcm1*4U2U',
+    'pw': '',
 }
 
 if __name__ == '__main__':
